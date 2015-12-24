@@ -1,6 +1,6 @@
 /**
     * @package Rocket Creative Multipurpose HTML Template
-    * 
+    *
     * Template Scripts
     * Created by Dan Fisher
 */
@@ -30,7 +30,7 @@
     initialize: function() {
 
       //Main Navigation
-      this.MainNav(); 
+      this.MainNav();
 
       //Mansory Blog
       this.MasonryBlog();
@@ -147,7 +147,7 @@
           var filterValue = $(this).attr('data-filter');
           $filter.find('a').removeClass('btn-primary').addClass('btn-default');
           $(this).addClass('btn-primary').removeClass('btn-default');
-          $container.isotope({ 
+          $container.isotope({
               filter: filterValue
           });
           return false;
@@ -177,7 +177,7 @@
           var filterHtml = $(this).clone();
           $filter.find('a').removeClass('btn-primary').addClass('btn-default');
           $(this).addClass('btn-primary').removeClass('btn-default');
-          $container.isotope({ 
+          $container.isotope({
               filter: filterValue
           });
           $(".filter-clone-btn").html(filterHtml);
@@ -224,7 +224,7 @@
         // Class that is added to popup wrapper and background
         // make it unique to apply your CSS animations just to this exact popup
         mainClass: 'mfp-fade'
-        
+
       });
     },
 
@@ -244,8 +244,8 @@
           autoCenter: true
         },
         transitionType:'fade',
-        autoScaleSlider: true, 
-        autoScaleSliderWidth: 570,     
+        autoScaleSlider: true,
+        autoScaleSliderWidth: 570,
         autoScaleSliderHeight: 550,
         loop: true,
         arrowsNav: false,
@@ -257,7 +257,7 @@
     BackToTop: function(){
       // Back to Top
       $("#back-top").hide();
-      
+
       $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
             $('#back-top').fadeIn();
@@ -268,7 +268,7 @@
     },
 
     ParallaxBackground: function(){
-      // Parallax        
+      // Parallax
       if (($(window).width() >= 1024) && (isMobile == false)) {
         $(".parallax-bg").each(function() {
           $(this).parallax("50%", 0.2);
@@ -341,7 +341,7 @@
         if(!body.classList.contains('disable-hover')) {
           body.classList.add('disable-hover')
         }
-        
+
         timer = setTimeout(function(){
           body.classList.remove('disable-hover')
         },200);
@@ -734,7 +734,7 @@
 
       $('#map_canvas').gmap3({
         marker:{
-          address: '40.719939, -74.010579' 
+          address: '40.719939, -74.010579'
         },
         map:{
           options:{
@@ -884,8 +884,8 @@
 
 
   $(document).ready(function() {
-    Core.initialize(); 
+    Core.initialize();
   });
-  
+
 
 })(jQuery);
