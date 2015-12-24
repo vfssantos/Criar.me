@@ -6,4 +6,4 @@ Pra facilitar a vida, recomendo instalar o Browser-sync. Ele faz um refresh auto
 
 1. Instale o [node-js](https://nodejs.org/en/)
 2. `npm install -g browser-sync`
-3. `browser-sync start --server --files "\*\*/\*.css, \*\*/\*.html, \*\*/\*.js"`
+3. `browser-sync start --server --files "**/*.css, **/*.html, **/*.js"`
