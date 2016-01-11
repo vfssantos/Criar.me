@@ -1,0 +1,71 @@
+so, first, I have this website which im making.
+And I want to add a blog to it. So, lets get to it!
+
+Here it's the ghost dependency as a module.
+We are adding a module to our app.
+This is me trying to do this, i've never done it beforem
+so be patient my friends :D
+
+So, this is the repository which im uploading this code. It's under a
+branch called criarme: https://github.com/cesarvargas00/Criar.me
+
+Let me change the README.md file
+
+Ok, done that, now let's test the webpage to look how it's showing now.
+Oops, lemme open the chat ;D
+
+Ok, thanks livecoding.tv bot(guy?)! Done that!
+
+Ok, so now let's test the webpage
+
+I don't know why but I guess that owlcarousel thingy isnt working as
+intended. Anyways, thats out of the scope of this video, so let's get going.
+
+First, lemme see how should I add ghost as a module to my project.
+
+Ok, I think this is it. So, I should set a parent app (my current app)
+on ghost middleware, so that I can call http://localhost:3000/blog
+and that should bring up my website blog.
+
+Ok, let's do it.
+( I only have 50 minutes or so. Im running this on battery )
+
+I should download a linter for atom. This is a fresh install.
+ Nah, f* it. I'll do this later.
+
+Im installing nodemon so I dont have to keep running the server on each
+change
+
+ok, I guess im running the wrong thingy... lemme check './bin/www'
+Ok, I guess I can just run app.js directly. This www file is just
+setting a few event listeners for information only. Ok...
+
+Ok! So I guess I did it. I just need to fix the css/js references on ghost.
+
+ohh wait...
+#w3irdthinghappened
+
+so I guess should create a content dir inside the project folder,
+and add all the themes images, apps in there.
+And probably, it would be a good idea to set things inside themes/assets
+as static stuff. Ok, lemme try that.
+
+( I still have 28 minutes )
+
+I never say things like copied on my git messages. Not sure if should do that way
+or this way.
+
+I wanted to turn my mic on but I can't say anything, my wife is sleeping right
+now.
+
+Lemme see what's inside this .config file for ghost(). Maybe it's easier than I
+thought.
+
+wait, i should remove the .db from git. do that l8r :*D
+
+Ok, I'm going to make a .config module so I can pass a few preferences to the function()
+Aint working. Wonder why. Ill check that l8r.
+
+Well my macbook will shutdown now... So I better go to 
+sleep. Cya guys later!
+Thanks for watching!

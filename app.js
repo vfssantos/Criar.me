@@ -5,6 +5,8 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var ghost = require('ghost');
+var path = require('path');
+
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -13,13 +15,12 @@ var parentApp = express(); //this is my current app.
 
 //i hate putting this many things inside a .then function.
 //i should probably organize this later.
-
-ghost().then(function( ghostServer ){
-  parentApp.use('/blog', ghostServer.rootApp);
+// console.log(ghostConfig.development);
+ghost({config:path.join(__dirname,'config.js')} ).then(function( ghostServer ){
+  parentApp.use(ghostServer.config.paths.subdir, ghostServer.rootApp);
   ghostServer.start(parentApp);
-
-
-
+  console.log(ghostServer.config.apiUrl());
+  console.log(ghostServer);
 // view engine setup
 parentApp.set('views', path.join(__dirname, 'views'));
 parentApp.set('view engine', 'hbs');
